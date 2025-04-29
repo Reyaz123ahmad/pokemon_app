@@ -1,0 +1,11 @@
+.app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  position: relative;
+}
+.app-head{
+  margin-top: 2rem;
+  
+}
