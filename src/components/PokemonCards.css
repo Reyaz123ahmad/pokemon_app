@@ -1,15 +1,16 @@
+/* Desktop View Part */
 
 .pokemon{
-    background-color: #ffffff;
+    
     display: flex;
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    padding: 2rem 0;
-    margin-top: 3rem;
+    padding: 2.5rem 0;
+    margin-top: 4.5rem;
 }
 .pokemon-cards{
-    width: 100%;
+    width: 100vw;
     
     display: flex;
     flex-wrap: wrap;
@@ -64,6 +65,7 @@
     border-radius: 3px;
     font-weight: bold;
     
+    
 }
 .type-filter:focus{
     outline: none;
@@ -105,19 +107,26 @@
     background-color: red;
 }
 
+/* Mobile View Part */
+
 @media(max-width:450px){
     .pokemon{
         gap: 1.5rem;
+        margin-top: 2.5rem;
     }
     .pokemon-cards{
         width: 100%;
         flex-wrap: wrap;
         
     }
-    .hi{
-        font-size: 10px;
-        display: flex;
-        gap: 0;
-    }
     
+    
+}
+
+/* I pad view Part */
+
+@media(min-width:700px) and (max-width:900px){
+    .search-input{
+        height: 2.8rem;
+    }
 }

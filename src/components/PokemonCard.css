@@ -1,3 +1,5 @@
+/* Desktop View Part */
+
 .pokemon-card{
     
     background-color: #1f88d9;
@@ -12,6 +14,7 @@
     transform: scale(1.05);
     transition: all linear .3s;
     background-color: rgb(49, 45, 4);
+    cursor: pointer;
 }
 .pokemon-content{
     display: flex;
@@ -27,6 +30,9 @@
 .pokemon-type{
     color: rgb(227, 225, 225);
 }
+
+/* Mobile View Part */
+
 @media(max-width:450px){
     .pokemon-card{
         width: 40%;
@@ -39,3 +45,12 @@
     }
 }
 
+/* I pad view Part */
+
+@media(min-width:700px) and (max-width:900px){
+    .pokemon-card{
+        width: 28%;
+        gap: 1.9rem;
+        border-radius: 1px;
+    }
+}

@@ -108,7 +108,7 @@ const PokemonCards = () => {
           >
           <option value="all" >All Types</option>
           {allTypes.map(type => (
-            <option className='hi' key={type} value={type}>
+            <option key={type} value={type}>
               {type.charAt(0).toUpperCase() + type.slice(1)}
             </option>
           ))}
